@@ -58,7 +58,7 @@ function M.save(buf)
 
     callback("before_asserting_save")
 
-    if cnf.opts.condition(buf) == false then
+    if not cnf.opts.condition(buf) then
         return
     end
 
